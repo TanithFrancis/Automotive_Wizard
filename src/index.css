@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-slate-900 to-slate-800 text-white;
+  }
+}
+
+@layer components {
+  .car-card {
+    @apply bg-gradient-to-b from-slate-800 to-slate-900 rounded-xl shadow-xl 
+           border border-slate-700/50 backdrop-blur-sm hover:shadow-red-500/20;
+  }
+  
+  .section-title {
+    @apply text-4xl font-bold mb-12 text-center bg-gradient-to-r from-red-500 to-orange-500 
+           bg-clip-text text-transparent;
+  }
+
+  .nav-link {
+    @apply flex items-center space-x-2 text-slate-300 hover:text-red-500 transition-colors 
+           duration-300 ease-in-out px-4 py-2 rounded-lg hover:bg-slate-800/50;
+  }
+}
